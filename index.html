@@ -1,34 +1,57 @@
+<!-- declare HTML5 standard -->
 <!DOCTYPE html>
+<!-- START html - english language -->
 <html lang="en">
+  <!-- START head tag -->
   <head>
+    <!-- meta - declare allowed character set -->
     <meta charset="UTF-8" />
+    <!-- meta - required attributes to use bootstrap. not used this project -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- title - browser tab text -->
     <title>Password Generator</title>
+    <!-- link to css stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
+  <!-- END head tag -->
+  <!-- START body tag -->
   <body>
+    <!-- START div.wrapper - padding 30px, 20px, 0px, 20px -->
     <div class="wrapper">
+      <!-- START header -->
       <header>
+        <!-- h1 - page title -->
         <h1>Password Generator</h1>
       </header>
+      <!-- END header -->
+      <!-- START div.card - Generate Password box -->
       <div class="card">
+        <!-- START div.card-header - Generate Password row -->
         <div class="card-header">
+          <!-- h2 - Generate Password text -->
           <h2>Generate a Password</h2>
         </div>
+        <!-- END div.card-header -->
+        <!-- START div.card-body - Your Secure Password box -->
         <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
+          <!-- textarea#password - Your Secure Password input -->
+          <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password" ></textarea>
         </div>
+        <!-- END div.card-body -->
+        <!-- START div.card-footer - Generate Password box -->
         <div class="card-footer">
+          <!-- button.btn#generate Generate Password button -->
           <button id="generate" class="btn">Generate Password</button>
         </div>
+        <!-- END div.card-footer -->
       </div>
+      <!-- END div.card -->
     </div>
+    <!-- END div.wrapper -->
+    <!-- script - link to javascript file -->
     <script src="script.js"></script>
   </body>
+  <!-- END body tag -->
 </html>
+<!-- END html -->

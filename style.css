@@ -1,9 +1,11 @@
+/* add box-sizing style to everything */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* add style to html and body tags and .wrapper class */
 html,
 body,
 .wrapper {
@@ -11,25 +13,25 @@ body,
   margin: 0;
   padding: 0;
 }
-
+/* override body tag style */
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
-
+/* used in div.wrapper - contains all content */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
-
+/* page title style */
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
-
+/* Generate Password box style */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -41,7 +43,7 @@ header {
   max-width: 800px;
   padding: 30px 40px;
 }
-
+/* Generate Password row style */
 .card-header::after {
   content: " ";
   display: block;
@@ -49,15 +51,15 @@ header {
   background: #e7e9eb;
   height: 2px;
 }
-
+/* Your Secure Password box style */
 .card-body {
   min-height: 100px;
 }
-
+/* Generate Password box style */
 .card-footer {
   text-align: center;
 }
-
+/* Generate Password box style before user click */
 .card-footer::before {
   content: " ";
   display: block;
@@ -65,13 +67,13 @@ header {
   background: #e7e9eb;
   height: 2px;
 }
-
+/* Generate Password box style after user click */
 .card-footer::after {
   content: " ";
   display: block;
   clear: both;
 }
-
+/* Generate Password button style */
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -87,16 +89,16 @@ header {
   text-align: center;
   cursor: pointer;
 }
-
+/* Generate Password button style when disabled */
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
 
-.float-right {
+/* .float-right {
   float: right;
-}
-
+} */
+/* password text area style */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -117,19 +119,20 @@ button[disabled] {
   resize: none;
   overflow: hidden;
 }
-
+/* responsive design - window style < 690 px */
 @media (max-width: 690px) {
+  /* responsive design - window style < 690 px - Generate Password button */
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
   }
-
+  /* responsive design - window style < 690 px - Generate Password textarea */
   #password {
     font-size: 1rem;
   }
 }
-
+/* responsive design - window style < 500 px */
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
